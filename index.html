@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskmeter.netify.app</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+<style>
+  .design{
+    margin-left:12px;
+     margin-right:10px;
+    margin-top:30px;
+    font: 16px;
+    background-color:rgb(243, 243, 255);
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:4px;
+    padding-bottom:4px;
+  }
+</style>
+</head>
+<body class="bg-[#ecefff] w-full h-[1300px]">
+    <div class="pt-16 pl-20 pr-20">
+    <div class="navbar bg-base-100 shadow-sm w-[1400px] h-[100px] rounded-lg">
+        <div class="flex justify-between  flex-row gap-[800px] ">
+            <div class="flex ml-20">
+            <img src="./assets/logo.png" alt="loadingr">
+          <a class="btn btn-ghost text-[36px] ">Dev<span class="font-bold">Board</span></a>
+        </div>
+        <div class=" flex gap-6">
+            <div class="bg-[#dce0f5] rounded-2xl flex  w-[113px] h-64px gap-5 px-3 py-2">
+                <img src="./assets/checkbox.png" alt="loading">
+                <h1 id="num2" class="bold text-[22px]">23</h1>
+            </div>
+            <div id="theme"><img  src="./assets/theme-btn.png" alt="loading"></div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <div class="flex w-full gap-14">
+        <div class="w-[1130px] min-h-fit bg-white mt-10 ml-20 rounded-xl">
+            <div class="border-dashed border-b-2 border-gray-500 flex">
+            <div class="w-[263px] h-[128px] bg-blue-50 m-7 flex justify-center items-center gap-7 rounded-xl">
+             <img src="./assets/checkbox.png"  class="bg-white rounded-full p-2 h-10 w-10" alt="link">
+             <div>
+                <h3 class="font-bold">Task Assigned</h3>
+                <h1 id="num1" class="font-bold text-[30px]">06</h2>
+             </div>
+            </div>
+            <button class="w-[524px] h-[128px] bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center rounded-xl mt-8">
+                <div><img src="./assets/board.png" alt="loading"></div>
+                <div><p id="blogs" class="text-[24px] font-bold text-white">Discover Something<br><span class="-ml-16">New Today!</span></p></div>
+            </button>
+            <div class="w-[263px] h-[128px] bg-blue-50 m-7 flex justify-center items-center gap-4 rounded-xl">
+                <img src="./assets/calender.png"  class="bg-white rounded-2xl p-3 h-10 w-10" alt="link">
+                <div class="flex gap-4">
+                   <h3 id="day" class="font-bold text-sm"></h3>
+                   <h1 id="date" class="font-bold text-sm"></h2>
+                </div>
+               </div>
+            </div>
+            <div class="grid-cols-3 grid mt-5 gap-6 ml-4 pb-12">
+                <div class="card w-[342px] h-[397px] bg-base-100 card-lg shadow-sm bg-blue-50">
+                    <div class="card-body">
+                      <h3 class="text-gray-700 bg-slate-50 w-fit p-4 rounded-lg">ShopEase</h3>
+                      <h2 class="card-title text-[24px]">Fix Mobile Button Issue</h2>
+                      <p class="bg-white w-[294px] h-[92px] px-7 py-7 text-gray-600 rounded-lg text-[17px]">Debug using Chrome<br>DevTools, check for overlappi...</p>
+                      <div class="border-dashed  border-gray-400 border-b-3 mt-5"></div>
+                      <div class="justify-between card-actions flex">
+                        <div class="font-semibold mt-7">
+                         <h1 class="text-gray-500">Deadline</h1>
+                         <h3>21 March 2025</h3>
+                        </div>
+                        <button id="card1" class="btn btn-primary w-[135px] h-[44px] mt-7 rounded-lg">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-[342px] h-[397px] bg-base-100 card-lg shadow-sm bg-blue-50">
+                    <div class="card-body">
+                      <h3 class="text-gray-700 bg-slate-50 w-fit p-4 rounded-lg">CloudSync</h3>
+                      <h2 class="card-title text-[24px]">Add Dark Mode</h2>
+                      <p class="bg-white w-[290px] h-[92px] px-7 py-7 text-gray-600 rounded-lg text-[15px] ">Store the user's preference in<br>localStorage, update CSS varia...</p>
+                      <div class="border-dashed  border-gray-400 border-b-3 mt-5"></div>
+                      <div class="justify-between card-actions">
+                        <div class="font-semibold mt-7">
+                         <h1 class="text-gray-500">Deadline</h1>
+                         <h3>21 March 2025</h3>
+                        </div>
+                        <button id="card2"  class="btn btn-primary w-[135px] h-[44px] mt-7 rounded-lg">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-[342px] h-[397px] bg-base-100 card-lg shadow-sm bg-blue-50">
+                    <div class="card-body">
+                      <h3 class="text-gray-700 bg-slate-50 w-fit p-4 rounded-lg">Swiftway</h3>
+                      <h2 class="card-title text-[24px]">Optimize home page</h2>
+                      <p class="bg-white w-[294px] h-[92px] px-7 py-7 text-gray-600 rounded-lg text-[17px] ">Debug using Chrome <br> DevTools, check for overlapi...</p>
+                      <div class="border-dashed  border-gray-400 border-b-3 mt-5"></div>
+                      <div class="justify-between card-actions">
+                        <div class="font-semibold mt-7">
+                         <h1 class="text-gray-500">Deadline</h1>
+                         <h3>21 March 2025</h3>
+                        </div>
+                        <button id="card3"  class="btn btn-primary w-[135px] h-[44px] mt-7 rounded-lg">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-[342px] h-[397px] bg-base-100 card-lg shadow-sm bg-blue-50">
+                    <div class="card-body">
+                      <h3 class="text-gray-700 bg-slate-50 w-fit p-4 rounded-lg">meta</h3>
+                      <h2 class="card-title text-[24px]">Add new emoji🤲 </h2>
+                      <p class="bg-white w-[294px] h-[92px] px-7 py-7 text-gray-600 rounded-lg text-[17px] ">Debug using Chrome <br> DevTools, check for overlapi...</p>
+                      <div class="border-dashed  border-gray-400 border-b-3 mt-5"></div>
+                      <div class="justify-between card-actions">
+                        <div class="font-semibold mt-7">
+                         <h1 class="text-gray-500">Deadline</h1>
+                         <h3>21 March 2025</h3>
+                        </div>
+                        <button id="card4" class="btn btn-primary w-[135px] h-[44px] mt-7 rounded-lg">Completed</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card w-[342px] h-[397px] bg-base-100 card-lg shadow-sm bg-blue-50">
+                    <div class="card-body">
+                      <h3 class="text-gray-700 bg-slate-50 w-fit p-4 rounded-lg">Google LLC</h3>
+                      <h2 class="card-title text-[24px]">Integrate oneAI API</h2>
+                      <p class="bg-white w-[294px] h-[92px] px-7 py-7 text-gray-600 rounded-lg text-[17px] ">Debug using Chrome <br> DevTools, check for overlapi...</p>
+                      <div class="border-dashed  border-gray-400 border-b-3 mt-5"></div>
+                      <div class="justify-between card-actions">
+                        <div class="font-semibold mt-7">
+                         <h1 class="text-gray-500">Deadline</h1>
+                         <h3>21 March 2025</h3>
+                        </div>
+                        <button id="card5" class="btn btn-primary w-[135px] h-[44px] mt-7 rounded-lg">Completed</button>
+                      </div>
+                    </div>
+                  </div> 
+                  <div class="card w-[342px] h-[397px] bg-base-100 card-lg shadow-sm bg-blue-50">
+                    <div class="card-body">
+                      <h3 class="text-gray-700 bg-slate-50 w-fit p-4 rounded-lg">Glassdoor</h3>
+                      <h2 class="card-title text-[24px]">Improve job searching</h2>
+                      <p class="bg-white w-[294px] h-[92px] px-7 py-7 text-gray-600 rounded-lg text-[17px] ">Debug using Chrome <br> DevTools, check for overlapi...</p>
+                      <div class="border-dashed  border-gray-400 border-b-3 mt-5"></div>
+                      <div class="justify-between card-actions">
+                        <div class="font-semibold mt-7">
+                         <h1 class="text-gray-500">Deadline</h1>
+                         <h3>21 March 2025</h3>
+                        </div>
+                        <button id="card6" class="btn btn-primary w-[135px] h-[44px] mt-7 rounded-lg">Completed</button>
+                      </div>
+                    </div>
+                  </div>  
+            </div>
+        </div>
+        <div id="history" class="w-[340px] h-[1070px] bg-white mt-10 mr-7">
+          <div class="flex gap-4 ml-8 mt-4 justify-center items-center">
+            <img src="./assets/activity.png" alt="loading">
+            <p class="text-[18px]">Activity Log</p>
+          </div>
+         <button id="clear"  class="w-[150px] h-[44px] bg-blue-500 rounded-xl ml-10 mt-5 text-white">Clear History</button>
+         <div class="border-b-2 border-gray-300 border-dashed mt-5 mx-3"></div>
+         <div id="indexdiv"></div>
+        </div>
+      </div>
+      <script src="./button file.js"></script>
+      <script src="./button-click.js"></script>
+      <script src="./card2.js"></script>
+      <script src="./card3.js"></script>
+      <script src="./card4.js"></script>
+      <script src="./card5.js"></script>
+      <script src="./card6.js"></script>
+      <script src="./clear.js"></script>
+      <script src="./blogs.js"></script>
+      <script src="./day-date.js"></script>
+</body>
+</html>

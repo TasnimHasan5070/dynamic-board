@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taskmeter.netify.app</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+    <body class="bg-[#ecefff] w-full h-[1300px]">
+        <div class="pt-16 pl-20 pr-20">
+        <div class="navbar bg-base-100 shadow-sm w-[1400px] h-[100px] rounded-lg">
+            <div class="flex justify-between  flex-row gap-[800px] ">
+                <div class="flex ml-20">
+                <img src="./assets/logo.png" alt="loadingr">
+              <a class="btn btn-ghost text-[36px] ">Dev<span class="font-bold">Board</span></a>
+            </div>
+            <button id="back" class="btn btn-primary w-[135px] h-[44px] rounded-lg">Back to Desk</button>
+            </div>
+            </div>
+          </div>  
+          <div class=" flex justify-center items-center text-2xl text-gray-700  mt-10 font-bold">Blogs</div>
+          <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-[1400px] h-[130px] ml-20 mt-10">
+            <div class="collapse-title font-bold text-xl border-b-2 border-gray-300 border-dashed">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="collapse-content text-md text-gray-400 font-bold text-lg mt-5">
+              using getElementById,getElementsByClassName,getElementsByTagName,querySelector,querySelectorAll.
+            </div>
+          </div>
+          <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-[1400px] h-[150px] ml-20 mt-10">
+            <div class="collapse-title font-bold text-xl border-b-2 border-gray-300 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
+            <div class="collapse-content text-md text-gray-400 font-bold text-lg mt-5">
+             innerHTML refers the set of all html of a div,innerText refers the text of any div or class with regarding of css style,textcontent refers the plain text of any div regardless the css style
+            </div>
+          </div>
+         <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-[1400px] h-[140px] ml-20 mt-10">
+            <div class="collapse-title font-bold text-xl border-b-2 border-gray-300 border-dashed">Question-3: What is event delegation in the DOM?</div>
+            <div class="collapse-content text-md text-gray-400 font-bold text-lg mt-5">
+             if any id have many class then an event listener add with that id to add the css style for styling  all the class including this id.it's call event delegation
+            </div>
+          </div> 
+          <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-[1400px] h-[140px] ml-20 mt-10">
+            <div class="collapse-title font-bold text-xl border-b-2 border-gray-300 border-dashed">Question-4: What is event bubbling in the DOM?</div>
+            <div class="collapse-content text-md text-gray-400 font-bold text-lg mt-5">
+             event bubbling refers the dom event propagatio,where the event works on its child element and propagating upwards to its parents
+            </div>
+          </div> 
+          <div tabindex="0" class="collapse collapse-open bg-base-100 border-base-300 border w-[1400px] h-[140px] ml-20 mt-10">
+            <div class="collapse-title font-bold text-xl border-b-2 border-gray-300 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</div>
+            <div class="collapse-content text-md text-gray-400 font-bold text-lg mt-5">
+             using JavaScript ,we can use document.create element() for creating element,.remove() and .add() for removing and add element
+            </div>
+          </div> 
+          <script src="./back.js"></script>
+</body>
+</html>
